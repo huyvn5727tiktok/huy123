@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Cửa hàng bán hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cửa hàng bán hàng</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="login.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Giỏ hàng</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="assets/product1.jpg" alt="Sản phẩm 1">
+                <h3>Sản phẩm 1</h3>
+                <p>Giá: 100.000đ</p>
+                <button class="remove-btn">Xóa</button>
+            </div>
+            <div class="cart-item">
+                <img src="assets/product2.jpg" alt="Sản phẩm 2">
+                <h3>Sản phẩm 2</h3>
+                <p>Giá: 200.000đ</p>
+                <button class="remove-btn">Xóa</button>
+            </div>
+            <!-- Thêm nhiều sản phẩm khác -->
+        </div>
+        <div class="cart-total">
+            <h3>Tổng cộng: <span id="total-price">300.000đ</span></h3>
+            <a href="checkout.html" class="btn">Thanh toán</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cửa hàng bán hàng. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
