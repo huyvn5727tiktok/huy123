@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Học trong Tôi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', cursive;
+          }
+
+header    {background-image: url("D:/WebCLB/nen.jpg");
+           background-size: cover; /* Tùy chỉnh kích thước ảnh */
+           height: 400px; /* Tùy chỉnh chiều cao header */
+           background-color: #2c3e50;
+           color: black;
+           padding: 100px;
+           text-align: center;
+          }
+.slogan   {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 1px;
+          }
+body      {
+            background-image: url("D:/WebCLB/nen6.jpg");
+            background-size: cover; /* Tùy chỉnh kích thước ảnh */
+            background-repeat: no-repeat; /* Ngăn lặp lại ảnh */
+            background-attachment: fixed; /* Giữ ảnh nền cố định */
+          }
+nav {
+            background-color: #B0E0E6;
+            padding: 15px;
+         }
+
+nav ul  {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+nav a   {
+            color: black;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+nav a:hover {
+            background-color: #ffffff;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .featured-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .member-card {background-color:white;
+
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+h1{font-size:2.5em;}
+         h2 {font-size:2em;
+            margin: 20px 0;
+        }
+
+         h3 {font-size:1.5em;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+p{font-size:1.25em;}
+ul{font-size:1.25;}
+footer {
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            line-height: 1.6;
+        }
+.work-card {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 4px 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1; /* Cho phép các ô tự động mở rộng */
+            max-width: 350px; /* Giới hạn chiều rộng tối đa */
+        }
+
+        .work-card img {
+            width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của ô */
+            height: auto; /* Tự động điều chỉnh chiều cao */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .work-list {
+            display: flex;
+            flex-wrap: wrap; /* Cho phép các ô nằm cạnh nhau */
+            justify-content: center; /* Canh giữa các ô */
+            margin-top: 20px;
+        transition: transform 0.3s;
+        }
+.work-card:hover {
+            transform: translateY(-5px);}
+
+
+     img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            display: block; /* Chuyển hình ảnh thành phần tử block */
+            margin: 0 auto; /* Căn giữa hình ảnh */
+
+
+        .work-card:hover {
+            transform: translateY(-5px);
+
+        }
+}
+
+        .noi-dung p {width: 80%;
+            margin: 20px auto;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-indent: 20px;
+        }
+.home-button {
+    position: fixed; /* Cố định vị trí nút */
+    top: 650px; /* Khoảng cách từ đỉnh trang */
+     right: 20px; /* Khoảng cách từ cạnh phải trang */
+    padding: 10px 20px; /* Kích thước nút */
+    background-color: #B0E0E6; /* Màu nền */
+    color: black; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 5px; /* Góc bo tròn */
+}
+
+.home-button:hover {
+    background-color: #ffffff; /* Thay đổi màu nền khi di chuột qua */
+}
+.home-button1 {
+    display: block; /* Hiển thị nút trên một dòng riêng */
+    width: 100px; /* Điều chỉnh chiều rộng nút */
+    padding: 10px 20px; /* Kích thước nút */
+    background-color: #B0E0E6; /* Màu nền */
+    color: black; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 5px; /* Góc bo tròn */
+    margin: 20px auto; /* Căn giữa nút và thêm khoảng cách */
+    text-align: center; /* Căn giữa nội dung nút */
+}
+
+.home-button1:hover {
+    background-color: #ffffff; /* Thay đổi màu nền khi di chuột qua */
+}
+.home-button2 {
+    position: fixed; /* Cố định vị trí nút */
+    top: 650px; /* Khoảng cách từ đỉnh trang */
+    left: 20px; /* Khoảng cách từ cạnh phải trang */
+    padding: 10px 20px; /* Kích thước nút */
+    background-color: #B0E0E6; /* Màu nền */
+    color: black; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 5px; /* Góc bo tròn */
+}
+
+.home-button2:hover {
+    background-color: #ffffff; /* Thay đổi màu nền khi di chuột qua */
+}
+
+           
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const memberCards = document.querySelectorAll('.member-card');
+            memberCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    alert(`You clicked on ${card.querySelector('h3').innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="trang-chu">
+        <h1 >TRÁCH NHIỆM CỦA TUỔI TRẺ VỚI QUÊ HƯƠNG,ĐẤT NƯỚC</h1>
+        <p class="slogan"><i>Song Thương</i></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="D:/WebCLB/index.html.html">Trang Chủ</a></li>
+            <li><a href="D:/WebCLB/gioithieu.html">Giới Thiệu</a></li>
+            <li><a href="D:/WebCLB/thanhvien.html">Thành Viên</a></li>
+            <li><a href="D:/WebCLB/tacpham.html">Tác Phẩm</a></li>
+            <li><a href="D:/WebCLB/phanhoi.html">Phản hồi</a></li>
+        </ul>
+    </nav>
+<p><br><br></p>
+
+
+
+<div class="noi-dung">
+            <img src="D:/WebCLB/trachnhiem.png" alt="Trách nhiệm của tuổi trẻ với quê hương,đất nước">
+            <p style="text-align: center"><i>
+                                           “Kháng chiến đã dành đất nước về cho đời<br>
+                                           Bóng đất nước hình như bóng dáng con tôi. ”</i></p>
+<p>
+                   Chiến tranh đã tước đi người con trai mà mẹ đã mang nặng đẻ đau, cướp đi sự hạnh phúc của một gia đình nhỏ. Nó gieo rắc sự đau khổ, bất hạnh, khốc liệt nhất cho nhân dân ta để rồi khi kể lại chỉ toàn là nước mắt khóc thương cho quê hương, đất nước và con người Việt Nam. Vậy nên, chúng ta là những mầm non xanh, là người đại diện cho thế hệ trẻ mang sự nhiệt huyết, sáng tạo cùng với tuổi trẻ sục sôi ko bao giờ nản chí phải luôn biết ơn, tự hào, có trách nhiệm đối với quê huơg, Tổ quốc.
+</p>
+<p>
+                   Thật vậy, chúng ta vẫn luôn đắn đo, suy nghĩ như thế nào về trách nhiệm với quê hương, đất nước và phải làm gì để bảo vệ, giữ gìn, xây dựng phát triển đất nước thịnh vượng? Thế hệ cha ông đã đánh đổi máu, mồ hôi và nước mắt, đấu tranh giành lại độc lập dân tộc, đánh đuổi giặc ngoại xâm bảo vệ đất nước bằng cả mạng sống của chính bản thân để có đất nước Việt Nam hoà bình như ngày hôm nay. Vì thế, ta phải luôn khắc ghi vào trong tim những chiến công lẫy lừng đó, biết ơn và tự hào sự hi sinh anh dũng của họ, nhận thức được lịch sử gây dựng, bảo vệ đất nước của thế hệ trước để từ đó cố gắng ra sức học tập, rèn luyện phẩm chất đạo đức, sức khoẻ cùng nhau giữ gìn, xây dựng đất nước ngày càng giàu mạnh.
+</p>
+<p>
+           Như đã biết, tuổi trẻ bây giờ khác xa với ngày trước rất nhiều bởi sự tác động phần lớn là về môi trường sống, các mối quan hệ xung quanh, các quan niệm, quan điểm xã hội dần thay đổi. Đặc biệt đó là những ng trẻ đang sống trong thời bình với tâm thế vô lo vô nghĩ. Người xưa khi đó nghèo khổ mà họ đùm bọc, chia sẻ cho nhau từng cái ăn, cái mặc. Họ coi trọng tình thương, tình làng nghĩa xóm, tình bạn bè chiến hữu. Nhưng thời nay, ng trẻ lại có điều kiện vật chất đầy đủ hơn mà họ dần lãng quên đi sự trân trọng, sống thiếu trách nhiệm với cái tôi cao ngất ngưỡng ko nghe một ai. Những thành phần như vậy sao có thể phát triển và bảo vệ đất nước được. Xã hội phát triển là nhờ sự tiến bước của các thế hệ nối nhau. Và người trẻ là mầm non tương lai của đất nước, những cá thể đầy màu sắc khác nhau, năng động, sáng tạo và đầy nhiệt huyết. Với nhiều khả năng tiềm ẩn, ng trẻ ko thể đừn im bất động, mà luôn phải hướng đến “trách nhiệm” của riêng mình. Kẻ chỉ luôn đặt cái tôi lên trước, cố giành quyền lợi cho mình, tất yếu sẽ sớm bị đào thải khỏi xã hội. Xã hội là sự cộng hưởng, góp sức và đồng lòng hướng tới mục tiêu chung, một lí tưởng vĩ đại. Hệt như đại dương bao la nơi những nhánh sông tụ họp, hệt như ngọn núi cao vạn trượng do đất bồi mà nên. Ko có ý thức được trách nhiệm của bản thân chẳng khác nào sống 1 cuộc đời vô nghĩa và khiến đất nước dần thụt lùi, kém phát triển mà thôi.
+</p>
+<p>
+           Cố Tổng Bí Thư Nguyễn Phú Trọng đã khắc ghi vào tâm trí của mỗi người trẻ về thái độ sống cống hiến đẹp đẽ như thế này:
+</p>
+<p style="text-align: center"><i>
+
+                                     “Nếu là hoa hãy là hoa hướng dương <br>
+                                      Nếu là chim hãy là chim bồ câu trắng <br>
+                                     Nếu là đá hãy là đá kim cương <br>
+                                    Nếu là người hãy là người cộng sản!”
+</i></p>
+<p>
+ Như cách bông hoa, loài chim, viên đá sống trọn vẹn hành trình cuộc đời của mình, người trẻ cần sống sao cho xứng đáng, cho ko hổ thẹn lương tâm. Mang danh người làm chủ của đất nước, là người tiên phong trong thời đại 4.0, thế hệ trẻ bức thiết phải ngẫm nghĩ về trách nhiệm, giá trị sống của bản thân. Ta mang trong mình sự nhiệt huyết mang tên “tuổi trẻ”  nên ta mới càng ra sức học tập, trau dồi kiến thức, rèn luyện phẩm chất đạo đức của con người. Có ước mơ, có hoài bão, có lí tưởng cao đẹp để hướng tới những điều tốt đẹp, tích cực trong cuộc sống. Từ đó vươn lên, nắm bắt cơ hội, đem sự sáng tạo, sức trẻ của chúng ta để cống hiến cho Tổ quốc thân yêu. Những thế hệ gen Z tài giỏi như Khánh Vy, Thạch Trang, MeeChan… vẫn đang ko ngừng học hỏi, trau dồi kho tàng kiến thức của bản thân, rèn luyện những kĩ năng, tài năng bản thân đang có hoặc chưa có để góp công vào sự phát triển của VN trên nền tảng xã hội. Hay tiến sĩ Nguyễn Trọng Hiếu tạo dựng uy tín nhà khoa học Việt trên trường Quốc tế với nghiên cứu về pin mặt trời. Tất cả đều đang cố gắng ko ngừng cho hoài bão của bản thân nó riêng và đất nước nói chung. Ko chỉ vậy, với xu thế hoà nhâọ mạnh mẽ ngày nay, mỗi quốc gia đều dễ dàng rơi vào nguy cơ bão hoà văn hoá, làm mất đi bản sắc dân tộc truyền thống mà ngàn đời gìn giữ. Vì vậy, chúng ta- thế hệ trẻ của đất nước cần coi trọng giá trị văn hoá của đất nước và đem tinh hoa của ng VN đi muôn nơi để các quốc gia khác có thể thấy được sự mạnh mẽ, kiên cường, bất khuất của ng con máu đỏ da vàng. Là người trẻ đầy nhiệt huyết, nhà thiết kế Minh Hạnh đã ôm mộng về “giấc mơ thổ cẩm” lâu dài, để rồi qua các mẫu trang phục do mình thiết kế, Minh Hạnh trở thành “sứ giả văn hoá” cho nét đẹp thổ của các dân tộc thiểu số VN. Như vậy, văn hoá vừa là nét đẹp riêng, vừa là cánh cửa mở ra sự hội nhập với thế giới.</p>
+<p>
+          Nhìn nhận vào thức tế đời sống hiện nay, xã hội phát triển ko có nghĩa ai cũng đầy đủ về mặt vật chất. Vẫn có những số phận bất hạnh,cơ nhỡ ko có mái ấm, thế nên với tấm lòng yêu thương ng trẻ cần dang rộng vòng tay, giúp đỡ, chia sẻ và nâng đỡ họ trước những hoàn cảnh đó. Đấy cũng là cách thế hệ trẻ thể hiện trách nhiệm của mình đối với xã hội. Quỹ từ thiện từ dự án “Nấu cơm cho em” của rapper Đen Vâu, hay chiến dịch “Sữa Kun cho em”, hãng doanh nghiệp này đều đang từng ngày chữa lành những mảnh đời khốn khó mà các em gặp phải. Từ những việc làm thiện lành, ng trẻ lại tiếp tục nhân giống, lan toả tình yêu thương trong trái tim của những đứa trẻ ấy. Dòng chảy này nối tiếp dòng chảy khác, thế hệ này nối tiếp thế hệ khác, dần dần đất nước ngày càng phát triển về mặt đạo đức, trở thành nơi đáng sống, lí tưởng, thân thương với mỗi người.
+</p>
+<p>
+        Song những ng trẻ luôn cháy trong mình ngọn lửa của sự nhiệt huyết lại có những lớp trẻ thờ ơ, thụ động, thiếu trách nhiệm với cuộc đời, với đất nước. Họ chỉ biết dậm chân tại chỗ, ù lì, lười biếng, ko có nổi 1 ước mơ, 1 lí tưởng sống cho bản thân. Có những ng họ tài giỏi, kiệt suất nhưng lại mang trong mình tư tưởng lệch lạc, trái với luân thường đạo lí, đạo đức làm người. Như Chu Quang Vinh, một thí sính của đường lên đỉnh Olympia đã có những phát ngôn gây sốc là toàn dân VN về tư tưởng phản nước lệch lạc, suy dồi về mặt đạo đức. Những con người đó đáng bị lên án và đào thải khỏi xã hội, họ tồn tại chỉ càng thêm “đất chật người đông”, khiến đất nước thụt lùi, kém phát triển. Vậy nên, với cương vị là một ng trẻ, chúng ta phải càng cố gắng, ra sức học tập, trau đồi kĩ năng của bản thân. Sống có hoài bão, lí tưởng cao đẹp để phục vụ, cống hiến cho Tổ quốc.
+</p>
+<p>
+                      Tự dặn lòng hãy là "hoa hướng dương", "bồ câu trắng"…chặng đường tôi đi vì thế trở nên ý nghĩa hơn bao giờ hết bởi tôi biết mình đã luôn nỗ lực học hỏi và cống hiến những giá trị tốt đẹp cho xã hội. Để rồi, mỗi khi nhìn lại hành trình mình đã đi, tôi thấy đời mình đẹp biết bao khi đã hoà làm một phần sức trẻ nhỏ bé vào công cuộc phát triển, giữ gìn đất nước.
+</p>
+</div>
+    </section>
+<p><br><br></p>
+<a href="D:/WebCLB/traitimronglondennhuongnao.html"><div class="home-button2" >Đọc lại</div></a>
+<a href="D:/WebCLB/sucmanhniemtincuagioitre.html"><div class="home-button" >Đọc tiếp</div></a>
+<a href="D:/WebCLB/tacpham.html" style="text-decoration: none;"><div class="home-button1">HOME</div></a>
+
+</body>
+</html>

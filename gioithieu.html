@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', cursive;
+        }
+
+       header {background-image: url("D:/WebCLB/nen.jpg");
+            background-size: cover; /* Tùy chỉnh kích thước ảnh */
+            height: 400px; /* Tùy chỉnh chiều cao header */
+
+            background-color: #2c3e50;
+            color: black;
+            padding: 100px;
+            text-align: center;
+        }
+
+        .slogan {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+body {
+            background-image: url("D:/WebCLB/nen6.jpg");
+            background-size: cover; /* Tùy chỉnh kích thước ảnh */
+            background-repeat: no-repeat; /* Ngăn lặp lại ảnh */
+            background-attachment: fixed; /* Giữ ảnh nền cố định */
+        }
+
+
+        nav {
+            background-color: #B0E0E6;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .featured-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .member-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+h1{font-size:2.5em;}
+         h2 {
+            margin: 20px 0;
+font-size:2em;
+        }
+
+         h3 {
+            margin: 20px 0;
+            line-height: 1.6;
+font-size:1.5em;
+        }
+p{font-size:1.25em;}
+
+.work-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1; /* Cho phép các ô tự động mở rộng */
+            max-width: 250px; /* Giới hạn chiều rộng tối đa */
+        }
+
+        .work-card img {
+            width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của ô */
+            height: auto; /* Tự động điều chỉnh chiều cao */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .work-list {
+            display: flex;
+            flex-wrap: wrap; /* Cho phép các ô nằm cạnh nhau */
+            justify-content: center; /* Canh giữa các ô */
+            margin-top: 20px;
+       transition: transform 0.3s;
+        }
+
+        .work-card:hover {
+            transform: translateY(-5px);
+
+        }
+ img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            display: block; /* Chuyển hình ảnh thành phần tử block */
+            margin: 0 auto; /* Căn giữa hình ảnh */
+}
+          footer {
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            line-height: 1.6;
+        }
+
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const memberCards = document.querySelectorAll('.member-card');
+            memberCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    alert(`You clicked on ${card.querySelector('h3').innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="trang-chu">
+        <h1>GIỚI THIỆU CỘNG ĐỒNG VĂN HỌC TRONG TÔI</h1>
+        <p class="slogan">Lửa sẽ tàn nhưng văn chương thì còn mãi</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="D:/WebCLB/index.html.html">Trang Chủ</a></li>
+            <li><a href="D:/WebCLB/gioithieu.html">Giới Thiệu</a></li>
+            <li><a href="D:/WebCLB/thanhvien.html">Thành Viên</a></li>
+            <li><a href="D:/WebCLB/tacpham.html">Tác Phẩm</a></li>
+            <li><a href="D:/WebCLB/phanhoi.html">Phản hồi</a></li>
+        </ul>
+    </nav>
+<p><br><br></p>
+
+  <div class="main-content">
+        <h2>Giới Thiệu</h2>
+        <p>"Văn học trong Tôi" là một cộng đồng yêu văn chương được lập ra bởi Nguyễn Ngọc Sang và Trần Nguyễn Song Thương.Với mục tiêu 
+tạo nên một nơi mà ở đó mọi người có thể bộc lộ những khung bậc cảm xúc,cũng là nơi mọi người có thể chia sẻ niềm say mê với văn chương.
+Bên cạnh đó,chúng tôi định hướng cho sự phát triển và mở rộng của cộng đồng bằng cách tạo nên một mô hình công đồng trực tuyến.Nơi mà mọi người có thể dễ dàng chia sẻ,phản hồi và đánh giá những cảm nhận của bản thân,cũng như đem những tác phẩm tâm đắc của chính mình đến với mọi người.</p>
+<p><br></p>
+   <img src="D:/WebCLB/003.jpg">
+
+<p><br><br></p>
+
+    <section id="activities" class="section">
+        <h2>Hoạt động của cộng đồng</h2>
+<i>
+        <div class="activities">
+            <div class="activity-card">
+<h3>-Thảo luận về các tác phẩm theo chủ đề, nội dung và chia sẻ cảm nhận về tác phẩm</h3>
+            </div>
+            <div class="activity-card">
+               <h3>-Lan tỏa cảm hứng sáng tác</h3>
+            </div>
+            <div class="activity-card">
+            <h3>-Đăng tải các tác phẩm lên mạng xã hội</h3>
+</i>
+            </div>
+<p><br><br></p>
+<img src="D:/WebCLB/004">
+        </div>
+    </section>
+<footer>
+        <p><i>Cảm ơn bạn đã ghé thăm trang giới thiệu cộng đồng của chúng tôi!<br>
+           Hãy cùng nhau thưởng thức những điều mới mẻ của văn chương</i></p>
+    </footer>
+</body>
+</html>
+                                                 

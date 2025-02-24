@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng ký tham gia cộng đồng</title>
+    <style>
+        .registration-form {
+            width: 400px; /* Điều chỉnh chiều rộng biểu mẫu */
+            margin: 0 auto; /* Căn giữa biểu mẫu */
+        }
+        .registration-form label {
+            display: block; /* Hiển thị nhãn trên một dòng riêng */
+            margin-bottom: 5px;
+        }
+        .registration-form input[type="text"],
+        .registration-form input[type="number"],
+        .registration-form textarea {
+            width: 100%; /* Chiều rộng 100% của phần tử cha */
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box; /* Bao gồm padding và border trong chiều rộng */
+        }
+        .registration-form input[type="submit"] {
+            display: block;
+            margin: 20px auto; /* Căn giữa nút submit */
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+.home-button {
+    position: fixed; /* Cố định vị trí nút */
+    top: 500px; /* Khoảng cách từ đỉnh trang */
+    right: 20px; /* Khoảng cách từ cạnh phải trang */
+    padding: 10px 20px; /* Kích thước nút */
+    background-color: #f0f0f0; /* Màu nền */
+    color: #333; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 5px; /* Góc bo tròn */
+}
+
+.home-button:hover {
+    background-color: #e0e0e0; /* Thay đổi màu nền khi di chuột qua */
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">Đăng ký tham gia cộng đồng</h1>
+    <form action="/submit-registration" method="post" class="registration-form">
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="birthyear">Năm sinh:</label>
+        <input type="number" id="birthyear" name="birthyear" min="1900" max="2023" required>
+
+        <label for="interests">Sở thích:</label>
+        <textarea id="interests" name="interests" rows="4" cols="50" required></textarea>
+
+        <label for="reason">Lý do đăng ký tham gia:</label>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+
+        <input type="submit" value="Đăng ký">
+
+<a href="D:/WebCLB/phanhoi.html" class="home-button">Home</a>
+    </form>
+</body>
+</html>
